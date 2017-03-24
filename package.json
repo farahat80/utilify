@@ -1,0 +1,28 @@
+{
+  "name": "js-utils",
+  "version": "0.0.1",
+  "description": "Vanilla JS helper functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/farahat80/js-utils.git"
+  },
+  "keywords": [
+    "js",
+    "utility",
+    "helpers"
+  ],
+  "author": "Ahmed Farahat <farahat80@gmail.com> (http://tutorialshub.net/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/farahat80/js-utils/issues"
+  },
+  "homepage": "https://github.com/farahat80/js-utils#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
