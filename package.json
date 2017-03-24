@@ -1,5 +1,5 @@
 {
-  "name": "js-utils",
+  "name": "utilify",
   "version": "0.0.1",
   "description": "Vanilla JS helper functions",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/farahat80/js-utils.git"
+    "url": "git+https://github.com/farahat80/utilify.git"
   },
   "keywords": [
     "js",
@@ -18,9 +18,9 @@
   "author": "Ahmed Farahat <farahat80@gmail.com> (http://tutorialshub.net/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/farahat80/js-utils/issues"
+    "url": "https://github.com/farahat80/utilify/issues"
   },
-  "homepage": "https://github.com/farahat80/js-utils#readme",
+  "homepage": "https://github.com/farahat80/utilify#readme",
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^3.2.0"
