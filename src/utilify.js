@@ -21,6 +21,7 @@ export function inArray(array, value) {
     }
   }
   catch (err) {
+    
     console.log(err.name, err.message);
   }
 }
