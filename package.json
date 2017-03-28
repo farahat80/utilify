@@ -2,7 +2,7 @@
   "name": "utilify",
   "version": "0.0.2",
   "description": "Vanilla JS helper functions",
-  "main": "index.js",
+  "main": "utilify.js",
   "scripts": {
     "test": "mocha -w test/helpers/browser.js test/*.spec.js",
     "coverage": "node_modules/.bin/babel-node node_modules/.bin/babel-istanbul cover node_modules/.bin/_mocha -- test/*.spec.js"
