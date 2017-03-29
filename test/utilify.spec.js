@@ -1,6 +1,7 @@
 'use strict';
 
-import {expect, assert} from 'chai';
+import { expect, assert } from 'chai';
+import should from 'should';
 import utilify from '../src/utilify';
 
 describe('#trim', function () {
@@ -22,7 +23,18 @@ describe('#inArray', function () {
   it('should return false if a value does not exist in an array', function () {
     expect(utilify.inArray(array,'mangos')).to.equal(false);
   });
-  // it('should throw an error if the array is undefined', function () {
-  //   expect(() => { utilify.inArray(null,'apples') }).to.throw(Error, "Array input is undefined");
-  // });
+  it('should throw an error if the array is undefined', function () {
+    expect(() => { utilify.inArray(null,'apples') }).to.throw(Error, "Array input is undefined");
+  });
+});
+
+describe('#extend', function () {
+  var obj1 = { name: 'Ahmed' };
+  var obj2 = { age: 36 };
+  it('should return one object of the combined objects properties', function () {
+    expect(utilify.extend(obj1, obj2)).to.deep.equal({name:'Ahmed', age:36});
+  });
+  it('should throw an error if the array is undefined', function () {
+    expect(() => { utilify.extend(null,null) }).to.throw(Error, "input objects can't be undefined");
+  });
 });
