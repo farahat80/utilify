@@ -1,7 +1,7 @@
 'use strict';
 
 import {expect, assert} from 'chai';
-import * as utilify from '../src/utilify';
+import utilify from '../src/utilify';
 
 describe('#trim', function () {
   it('should remove leading and trailing empty spaces', function () {
