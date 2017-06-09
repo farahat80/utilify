@@ -1,7 +1,7 @@
 'use strict';
 
-var Arrays = (function () {
-  function Arrays() { }
+var Arrays = (function(){
+  function Arrays(){ }
 
   Arrays.prototype.inArray = function (array, value) {
     if (array) {
@@ -11,9 +11,9 @@ var Arrays = (function () {
       }
       return false;
     } else {
-      throw new Error("Array input is undefined");
+      throw new Error('Array input is undefined');
     }
-  }
+  };
 
   return Arrays;
 })();

@@ -8,10 +8,7 @@ var utilify = {
   strings: new Strings(),
   arrays: new Arrays(),
   objects: new Objects(),
-  url: new Url()
-}
+  url: new Url(),
+};
 
 module.exports = utilify;
-
-
-
