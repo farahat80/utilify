@@ -12,10 +12,10 @@ var Strings = (function () {
   };
   Strings.prototype.strip = function (html) {
     if (html) {
-      return html.replace(/(<([^>]+)>)/ig, "");
+      return html.replace(/(<([^>]+)>)/ig, '');
     }
     return '';
-  }
+  };
   Strings.prototype.truncate = function (str, length, ellipses, strip) {
     if (str) {
       var truncStr = '';
@@ -29,7 +29,7 @@ var Strings = (function () {
       return truncStr;
     }
     return '';
-  }
+  };
   return Strings;
 })();
 
