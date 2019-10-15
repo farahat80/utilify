@@ -1,9 +1,7 @@
-'use strict';
+var Url = (function() {
+  function Url() {}
 
-var Url = (function () {
-  function Url() { }
-
-  Url.prototype.getParam = function (name, url) {
+  Url.prototype.getParam = function(name, url) {
     if (!url) {
       url = this.getHref();
     }
@@ -14,7 +12,7 @@ var Url = (function () {
     if (!results[2]) return '';
     return decodeURIComponent(results[2].replace(/\+/g, ' '));
   };
-  Url.prototype.getParams = function () {
+  Url.prototype.getParams = function() {
     var url = this.getHref();
     var retObject = {};
     var parameters;
@@ -31,7 +29,7 @@ var Url = (function () {
     }
     return retObject;
   };
-  Url.prototype.getHashParams = function () {
+  Url.prototype.getHashParams = function() {
     var hash = this.getHash();
     var retObject = {};
     var parameters;
@@ -45,15 +43,18 @@ var Url = (function () {
     }
     return retObject;
   };
-  Url.prototype.addParam = function (key, value) {
+  Url.prototype.addParam = function(key, value) {
     key = encodeURIComponent(key);
     value = encodeURIComponent(value);
-    var kvp = this.getSearch().substr(1).split('&');
+    var kvp = this.getSearch()
+      .substr(1)
+      .split('&');
     if (kvp == '') {
       return this.getPath() + '?' + key + '=' + value + this.getHash();
-    }
-    else {
-      var i = kvp.length; var x; while (i--) {
+    } else {
+      var i = kvp.length;
+      var x;
+      while (i--) {
         x = kvp[i].split('=');
         if (x[0] == key) {
           x[1] = value;
@@ -67,16 +68,16 @@ var Url = (function () {
       return this.getPath() + '?' + kvp.join('&') + this.getHash();
     }
   };
-  Url.prototype.getSearch = function () {
+  Url.prototype.getSearch = function() {
     return window.location.search;
   };
-  Url.prototype.getHash = function () {
+  Url.prototype.getHash = function() {
     return window.location.href;
   };
-  Url.prototype.getPath = function () {
+  Url.prototype.getPath = function() {
     return window.location.pathname;
   };
-  Url.prototype.getHref = function () {
+  Url.prototype.getHref = function() {
     return window.location.href;
   };
   return Url;
