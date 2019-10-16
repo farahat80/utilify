@@ -9,11 +9,10 @@ install:
 script:
   - npm run coverage
 
-after_script:
-  - npm run build
-
 # Send coverage data to Coveralls
-after_script: 'cat coverage/lcov.info | node_modules/coveralls/bin/coveralls.js'
+after_script: 
+  'cat coverage/lcov.info | node_modules/coveralls/bin/coveralls.js'
+  - npm run build
 
 deploy:
   provider: npm
