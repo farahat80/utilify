@@ -15,7 +15,6 @@ after_script: 'cat coverage/lcov.info | node_modules/coveralls/bin/coveralls.js'
 deploy:
   provider: npm
   email: '$NPM_EMAIL'
-  api_key: '$NPM_API_TOKEN'
+  api_key: '$NPM_TOKEN'
   on:
-    branch: master
     tags: true

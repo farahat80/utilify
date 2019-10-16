@@ -1,6 +1,6 @@
 {
   "name": "utilify",
-  "version": "0.0.6",
+  "version": "0.0.8",
   "description": "Vanilla JS helper functions",
   "main": "./src/utilify.js",
   "scripts": {
